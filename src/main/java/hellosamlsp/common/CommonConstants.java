@@ -12,15 +12,15 @@ public class CommonConstants {
 
     private static final Logger logger = LoggerFactory.getLogger(CommonConstants.class);
 
-    public static final String PUBLIC_KEY_PATH;
+    public static final String IDP_METADATA_FILEPATH;
 
     public static final String CONFIG_FILE_NAME = "/config/hellosamlsp.properties";
 
     static {
         Properties properties = loadProperties();
-        PUBLIC_KEY_PATH = properties.getProperty("public_key_path");
+        IDP_METADATA_FILEPATH = properties.getProperty("idp_metadata_filepath");
         logger.info("============================CONFIG=========================");
-        logger.info("PUBLIC_KEY_PATH:" + PUBLIC_KEY_PATH);
+        logger.info("IDP_METADATA_FILEPATH:" + IDP_METADATA_FILEPATH);
         logger.info("============================================================");
     }
 

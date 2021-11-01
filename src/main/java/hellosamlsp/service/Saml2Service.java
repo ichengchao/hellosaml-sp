@@ -30,9 +30,7 @@ public class Saml2Service {
     public String validateSAMLResponse(String samlResponse) throws Exception {
 
         Assert.hasText(samlResponse, "samlResponse can not be blank!");
-
         byte[] base64DecodedResponse = Base64.getDecoder().decode(samlResponse);
-
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         dbf.setNamespaceAware(true);
         DocumentBuilder db = dbf.newDocumentBuilder();
@@ -51,8 +49,13 @@ public class Saml2Service {
         String audience = assertion.getConditions().getAudienceRestrictions().get(0).getAudiences().get(0).getURI();
         String statusCode = response.getStatus().getStatusCode().getValue();
         Signature sig = response.getSignature();
+        if (null == sig) {
+            sig = assertion.getSignature();
+        }
         SignatureValidator.validate(sig, CertManager.getPublicCredential());
 
+        logger.info("=============================================");
+        logger.info("SAML Response validate");
         logger.info("=============================================");
         logger.info(new String(base64DecodedResponse));
         logger.info("=============================================");

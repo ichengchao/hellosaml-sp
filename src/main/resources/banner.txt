@@ -1,6 +1,6 @@
 ${AnsiColor.GREEN}
 ====================================================
-====================  hellosamlsp  =====================
+                    hellosamlsp 
 ====================================================
 springboot verison: ${spring-boot.formatted-version}
 
