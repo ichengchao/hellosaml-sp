@@ -1,16 +1,16 @@
-package hellosamlsp;
+package name.chengchao.hellosaml.sp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
-@ServletComponentScan("hellosamlsp")
+@ServletComponentScan("name.chengchao.hellosaml.sp")
 
-public class MyApplication {
+public class SPDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MyApplication.class, args);
+        SpringApplication.run(SPDemoApplication.class, args);
     }
 
 }

@@ -1,4 +1,4 @@
-package hellosamlsp.model;
+package name.chengchao.hellosaml.sp.model;
 
 /**
  * @author charles.chengc 2015年6月30日 下午5:29:43

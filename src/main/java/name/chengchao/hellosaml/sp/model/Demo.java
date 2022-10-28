@@ -1,4 +1,4 @@
-package hellosamlsp.model;
+package name.chengchao.hellosaml.sp.model;
 
 public class Demo {
 

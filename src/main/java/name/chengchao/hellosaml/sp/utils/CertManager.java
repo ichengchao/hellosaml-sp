@@ -1,4 +1,4 @@
-package hellosamlsp.utils;
+package name.chengchao.hellosaml.sp.utils;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -10,7 +10,6 @@ import java.util.Base64;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import hellosamlsp.common.CommonConstants;
 import org.opensaml.core.config.InitializationService;
 import org.opensaml.core.xml.XMLObject;
 import org.opensaml.core.xml.config.XMLObjectProviderRegistrySupport;
@@ -24,6 +23,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+
+import name.chengchao.hellosaml.sp.common.CommonConstants;
 
 /**
  * CertManager

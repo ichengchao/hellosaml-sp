@@ -1,4 +1,4 @@
-package hellosamlsp.model;
+package name.chengchao.hellosaml.sp.model;
 
 import org.springframework.util.Assert;
 

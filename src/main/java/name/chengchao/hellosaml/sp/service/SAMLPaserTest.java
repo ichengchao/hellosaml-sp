@@ -1,4 +1,4 @@
-package hellosamlsp.service;
+package name.chengchao.hellosaml.sp.service;
 
 import java.io.ByteArrayInputStream;
 import java.util.Base64;
@@ -6,7 +6,6 @@ import java.util.Base64;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import hellosamlsp.utils.CertManager;
 import org.opensaml.core.config.InitializationService;
 import org.opensaml.core.xml.XMLObject;
 import org.opensaml.core.xml.config.XMLObjectProviderRegistrySupport;
@@ -19,7 +18,9 @@ import org.opensaml.xmlsec.signature.support.SignatureValidator;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-public class SAMLPaser {
+import name.chengchao.hellosaml.sp.utils.CertManager;
+
+public class SAMLPaserTest {
 
     public static void main(String[] args) throws Exception {
         String publicKeyString = "MIICljCCAX4CCQC7RjkGROeKPDANBgkqhkiG9w0BAQsFADANMQswCQYDVQQGEwJDTjAeFw0yMDA5MzAwMzIxNTBaFw0zMDA5MzAwMzIxNTBaMA0xCzAJBgNVBAYTAkNOMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuhz/GGrDLm0ooXDtTF4KP0KSF9c/9NpvrrWSOObNA/8zmoC8wIE0WAMCQARtWeztnyAPVT8l36hK23tldDaz9CmAUWBmUfqtIBnI6EFt20MA43bls3EOoMxOj65Z93mQulPsQn1NaWKQ48gL6LPFDRPKMt2UBH+s6FbTJmX22KYiM6WGqp5lJqJelswWRVm7CLfgbcU3+eBo5L7L+M/GN0xcgb9PajO3L3ad7FLLFs20Zu/dyteYvHDdR0n0P+yvhrkHcaWW5Mx83vcr2IhvtgJcXeby4dGfep4Ym8WJPrU4n4arUCfzYAohJklfGmtEop7nc8+ljktEZIEYbB9LVwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCBLtYUlvxIzTKExsjZj691/vwxvtlLo3w1Cf7+VPPHCS1zAliFI4S0U5U46mkiohgvPI+GUQTnPOgDj9mN6oYQ17A0czjqBwOUMiPCCNMKN+FMHFXKflUwzJ5SMWL1S4zPNaomIguRHDKWeMDagAQuAspUe2tM6GY8qDCYwf5w0TqT0t0l0ZsSvbwMs+6+8KWa1kUMcP4mqFEA6XWlUaEZgIj0sxgC9YSM9M4tlY5rVB85e4TwrskpHSszMZcyiHNcyuOo/CR6xT71y+4JQq+bMtGeSvP5Qw6n6oGZpS9paB8D6MJSmpgiVVFnXBhPpgWPLxLmuuFslanasyQjvREB";

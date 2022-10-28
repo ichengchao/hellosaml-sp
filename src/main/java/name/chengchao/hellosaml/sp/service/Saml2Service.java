@@ -1,4 +1,4 @@
-package hellosamlsp.service;
+package name.chengchao.hellosaml.sp.service;
 
 import java.io.ByteArrayInputStream;
 import java.util.Base64;
@@ -6,7 +6,6 @@ import java.util.Base64;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import hellosamlsp.utils.CertManager;
 import org.opensaml.core.xml.XMLObject;
 import org.opensaml.core.xml.config.XMLObjectProviderRegistrySupport;
 import org.opensaml.core.xml.io.Unmarshaller;
@@ -21,6 +20,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+
+import name.chengchao.hellosaml.sp.utils.CertManager;
 
 @Component
 public class Saml2Service {
